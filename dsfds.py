@@ -1,17 +1,33 @@
-""" item = {
-    "name": "Samsung 55\" 4K UHD TV",
-    "price": 429.99,
-    "department": "Televisions",
-    "description": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps."
-} """
 
-""" print (item)
- """
-
-stuff = {
+stuff = [
+    {
     "name": "insurance 1 life time covering everything ",
     "price": 89320.09,
     "department": "Misc",
     "description": "covers everthing from death to lost in jungle, just buy it."
-}
-print (stuff)
+    },
+    {
+    "name": "sketchy surgery",
+    "price": 1000000.09,
+    "department": "surgery",
+    "description": "fix everything, no questions asked"
+    },
+    {
+    "name": "revenge",
+    "price": 32856.09,
+    "department": "revenge",
+    "description": "revenge"
+    }
+]
+
+k = 0
+for index, item in enumerate(stuff):
+    print(index, ":", item["name"])
+want = int(input("what u wnat (number)"))
+while A == False:
+    if want == 0:
+        print(stuff[0])
+    elif want == 1:
+        print(stuff[1])
+    elif want == 2:
+        print(stuff[2]) 
