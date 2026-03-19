@@ -19,35 +19,36 @@ stuff = [
     "description": "revenge"
     }
 ]
-
-price_of_stuff = 0
-for index, item in enumerate(stuff):
-    print(index, ":", item["name"])
-want = int(input("what u wnat (number)"))
+total_of_cart = 0
+cart = []
 user = False
 while user == False:
+    for index, item in enumerate(stuff):
+        print(index, ":", item["name"])
+    want = int(input("what u wnat (number)"))
     if want == 0:
-        print(stuff[0])
-        price_of_stuff += 89320.09
-        cont=input("countiune yes,no")
-        if input == "yes":
-            user == False
-        elif cont == "no":
-            user == True
+        cart.append(stuff[0])
+        total_of_cart += 89320.09
     elif want == 1:
-        print(stuff[1])
-        price_of_stuff += 1000000.09
-        cont=input("countiune yes,no")
-        if input == "yes":
-            user == False
-        elif cont == "no":
-            user == True
-
+        cart.append(stuff[1])
+        total_of_cart += 1000000.09
     elif want == 2:
-        print(stuff[2]) 
-        price_of_stuff += 32856.09        
-        cont= input("countiune yes,no")
-        if input == "yes":
-            user == False
-        elif cont == "no":
-            user == True
+        cart.append(stuff[2])
+        total_of_cart += 32856.09
+    cont = input("countiune yes,no  ")
+    if input == "yes":
+        user = False
+    elif cont == "no":
+        user = True
+if user == True:
+    x = 0
+    for i in cart:
+        print(cart[x]["name"])
+        x+=1
+        if x > 2:
+            x=0
+total = input("do u want to bill    ")
+if total == "yes":
+    print (total_of_cart)
+elif total == "no":
+    print("ok")
