@@ -25,8 +25,8 @@ while user == False:
     for index, item in enumerate(stuff):
         print(index, ":", item["name"])
     want = int(input("what u wnat (number)"))
-   
-
+    cart.append(stuff[want])
+    total_of_cart += stuff[want]["price"]
     cont = input("countiune yes,no  ")
     if input == "yes":
         user = False
