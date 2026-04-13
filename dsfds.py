@@ -1,4 +1,3 @@
-
 stuff = [
     {
     "name": "insurance 1 life time covering everything ",
@@ -13,10 +12,10 @@ stuff = [
     "description": "fix everything, no questions asked"
     },
     {
-    "name": "revenge",
+    "name": "for something",
     "price": 32856.09,
-    "department": "revenge",
-    "description": "revenge"
+    "department": "nothing",
+    "description": "revenging for u"
     }
 ]
 total_of_cart = 0
@@ -26,15 +25,8 @@ while user == False:
     for index, item in enumerate(stuff):
         print(index, ":", item["name"])
     want = int(input("what u wnat (number)"))
-    if want == 0:
-        cart.append(stuff[0])
-        total_of_cart += 89320.09
-    elif want == 1:
-        cart.append(stuff[1])
-        total_of_cart += 1000000.09
-    elif want == 2:
-        cart.append(stuff[2])
-        total_of_cart += 32856.09
+   
+
     cont = input("countiune yes,no  ")
     if input == "yes":
         user = False
