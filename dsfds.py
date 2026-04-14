@@ -16,6 +16,12 @@ stuff = [
     "price": 32856.09,
     "department": "nothing",
     "description": "revenging for u"
+    },
+    {
+    "name": "china",
+    "price": 328560000000.09,
+    "department": "country",
+    "description": "中国"
     }
 ]
 total_of_cart = 0
