@@ -31,7 +31,7 @@ while user == False:
     for index, item in enumerate(stuff):
         print(index, ":", item["name"])
     want = int(input("what u wnat (number)"))
-    cart.append(stuff[want])
+    cart.append(stuff[want]["name"])
     total_of_cart += stuff[want]["price"]
     cont = input("countiune yes,no  ")
     if input == "yes":
@@ -39,14 +39,10 @@ while user == False:
     elif cont == "no":
         user = True
 if user == True:
-    x = 0
-    for i in cart:
-        print(cart[x]["name"])
-        x+=1
-        if x > 2:
-            x=0
-total = input("do u want to bill    ")
-if total == "yes":
-    print (total_of_cart)
-elif total == "no":
-    print("ok")
+    total = input("do u want to bill    ")
+    if total == "yes":
+        print (total_of_cart)
+        print(cart)
+    elif total == "no":
+        print("ok")
+        print(cart)
