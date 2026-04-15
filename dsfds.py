@@ -1,6 +1,6 @@
 stuff = [
     {
-    "name": "insurance 1 life time covering everything ",
+    "name": "insurance",
     "price": 89320.09,
     "department": "Misc",
     "description": "covers everthing from death to lost in jungle, just buy it."
@@ -22,6 +22,18 @@ stuff = [
     "price": 328560000000.09,
     "department": "country",
     "description": "中国"
+    },
+    {
+    "name": "bitcoin miner",
+    "price": 3285.09,
+    "department": "miner",
+    "description": "free bitcoin at the expenise of you eletcrial bill"
+    },
+    {
+    "name": "gggold machine",
+    "price": 3228410.09,
+    "department": "gold",
+    "description": "free gggold, it the ggggold machine"
     }
 ]
 total_of_cart = 0
